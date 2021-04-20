@@ -124,7 +124,7 @@ function register_user() {
 				'remember' => true,
 			));
 			
-			if ( ! is_wp_error($signon )) { // If not error
+			if ( !is_wp_error( $signon ) ) { // If not error
 				// Set cookies
 				wp_clear_auth_cookie();
 				clean_user_cache( $signon->ID );
@@ -142,7 +142,6 @@ function register_user() {
 	wp_send_json($response);
 	wp_die();
 }
-
 
 /**
  * Authenticates user (need to reload page)
@@ -186,7 +185,6 @@ function authenticate_user() {
 	wp_die();
 }
 
-
 /**
  * Send link to reset password
  */
@@ -194,12 +192,12 @@ function send_reset_link() {
 	check_ajax_referer( 'moroz-nonce', 'nonce' ); // Check nonce code
 	$response = array();
 	
-	$email = $_POST['email']; // Email address
+	$email = $_POST['email'];
 	$user = get_user_by( 'email', $email ); // Login = email
 	
-	if ( ! email_exists($email) || ! $user ) {
+	if (!email_exists($email) || !$user) {
 		$response["message"] = "Такого пользователя не существует $email";
-	} elseif ( is_user_logged_in() ) {
+	} elseif (is_user_logged_in() ) {
 		$response["message"] = "Вы уже авторизованы, перезагрузите страницу";
 	} else {
 		$key = get_password_reset_key($user);
@@ -227,7 +225,6 @@ function send_reset_link() {
 	wp_send_json($response);
 	wp_die();
 }
-
 
 /**
  * Reset password
@@ -275,7 +272,6 @@ function reset_user_password() {
 	wp_die();
 }
 
-
 /**
  * Add product to cart via ajax
  */
@@ -291,7 +287,6 @@ function add_to_cart() {
 	
 	wp_die();
 }
-
 
 /**
  * Constructs and send remind message via AJAX

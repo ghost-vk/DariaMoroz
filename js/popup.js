@@ -651,7 +651,7 @@ MOROZ.Popup.response = {
                 button.addClass("active"); // Show loader
                 popupId = popupWindow.parent().attr('id');
 
-                // Send data
+                // Отправка данных
                 data = collectData(popupWindow);
                 $.post( dataPage.url, data, function (response) {
                     // console.log(response); // Test

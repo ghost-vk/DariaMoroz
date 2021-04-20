@@ -58,28 +58,30 @@
                 ] ); ?>
     
 				<?php global $current_user; wp_get_current_user(); ?>
-				<?php if ( is_user_logged_in() ) : ?>
-                    <a class="nav__register_desktop poPage" href="<?php bloginfo('wpurl') ?>/privateoffice"><?php echo $current_user->user_firstname  ?></a>
-                    <?php $class = (is_page('privateoffice')) ? 'active' : ''; ?>
-                    <a class="nav__register_mobile poPage <?= $class; ?>" href="<?= home_url('privateoffice'); ?>">
-                        <svg viewBox="0 0 23 21">
-                            <path class="mobileFill" fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M14.6551 8.56946C15.7391 7.68051 16.4289 6.34252 16.4289 4.84613C16.4289 2.16969
-                                14.2223 0 11.5003 0C8.7783 0 6.57171 2.16969 6.57171 4.84613C6.57171 6.34245 7.2614 7.68038
-                                8.34526 8.56933C3.52779 10.1103 0 15.0922 0 21H23C23 15.0924 19.4724 10.1106 14.6551 8.56946Z"/>
-                        </svg>
-                    </a>
-                <?php else : ?>
-                    <a class="nav__register_desktop poPage popup-opener" href="#" data-popup="popup-login">Вход/Регистрация</a>
-                    <a class="nav__register_mobile poPage popup-opener" href="#" data-popup="popup-login">
-                        <svg viewBox="0 0 23 21">
-                            <path class="mobileFill" fill-rule="evenodd" clip-rule="evenodd"
-                                d="M14.6551 8.56946C15.7391 7.68051 16.4289 6.34252 16.4289 4.84613C16.4289 2.16969
-                                14.2223 0 11.5003 0C8.7783 0 6.57171 2.16969 6.57171 4.84613C6.57171 6.34245 7.2614 7.68038
-                                8.34526 8.56933C3.52779 10.1103 0 15.0922 0 21H23C23 15.0924 19.4724 10.1106 14.6551 8.56946Z"/>
-                        </svg>
-                    </a>
-                <?php endif; ?>
+				<?php 
+				
+					if ( is_user_logged_in() ) : ?>
+                        <a class="nav__register_desktop poPage" href="<?php bloginfo('wpurl') ?>/privateoffice"><?php echo $current_user->user_firstname  ?></a>
+                        <?php $class = (is_page('privateoffice')) ? 'active' : ''; ?>
+                        <a class="nav__register_mobile poPage <?= $class; ?>" href="<?= home_url('privateoffice'); ?>">
+                            <svg viewBox="0 0 23 21">
+                                <path class="mobileFill" fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M14.6551 8.56946C15.7391 7.68051 16.4289 6.34252 16.4289 4.84613C16.4289 2.16969
+                                    14.2223 0 11.5003 0C8.7783 0 6.57171 2.16969 6.57171 4.84613C6.57171 6.34245 7.2614 7.68038
+                                    8.34526 8.56933C3.52779 10.1103 0 15.0922 0 21H23C23 15.0924 19.4724 10.1106 14.6551 8.56946Z"/>
+                            </svg>
+                        </a>
+                    <?php else : ?>
+	                    <a class="nav__register_desktop poPage popup-opener" href="#" data-popup="popup-login">Вход/Регистрация</a>
+				        <a class="nav__register_mobile poPage popup-opener" href="#" data-popup="popup-login">
+                            <svg viewBox="0 0 23 21">
+                                <path class="mobileFill" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.6551 8.56946C15.7391 7.68051 16.4289 6.34252 16.4289 4.84613C16.4289 2.16969
+                                    14.2223 0 11.5003 0C8.7783 0 6.57171 2.16969 6.57171 4.84613C6.57171 6.34245 7.2614 7.68038
+                                    8.34526 8.56933C3.52779 10.1103 0 15.0922 0 21H23C23 15.0924 19.4724 10.1106 14.6551 8.56946Z"/>
+                            </svg>
+				        </a>
+                    <?php endif; ?>
 				<?php $class = (is_page('cart') || is_page('checkout')) ? 'active' : ''; ?>
 				<a class="nav__cart cartPage <?= $class; ?>" href="<?= wc_get_cart_url(); ?>">
 					<svg viewBox="0 0 26.458333 26.458334">

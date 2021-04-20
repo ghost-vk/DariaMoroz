@@ -271,7 +271,7 @@ function change_user_password() {
 }
 
 /**
- * Get user full paid orders to display in user account
+ * Get user orders to display in user account
  * @return {Array} - product ids
  */
 function get_user_paid_orders( $categories = ['course-multi', 'course-single'] ) {
