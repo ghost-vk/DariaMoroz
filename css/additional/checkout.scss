@@ -1,0 +1,127 @@
+.checkout-login-required {
+  text-align: center;
+  h5 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+.DM-checkout {
+  margin-top: 40px;
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+  }
+}
+
+.DM-checkout .woocommerce-billing-fields {
+  .form-row {
+    flex: 0 0 90%;
+    @media (max-width: 1024px) {
+      flex: 0 0 100%;
+    }
+  }
+  input {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 28px;
+    padding: 0 0 0 8px!important;
+    height: 28px;
+    border-radius: 4px!important;
+  }
+}
+
+.select2-results {
+  li {
+    color: #000000!important;
+  }
+  .select2-results__option--highlighted[data-selected] {
+    background-color: #fe182a!important;
+  }
+}
+
+.select2-selection {
+  border: none!important;
+}
+
+.checkout-label {
+  margin-bottom: 15px;
+  .select2-selection__rendered {
+    font-size: 16px;
+    color: #000000!important;
+  }
+}
+
+.customer-info {
+  margin-top: 40px;
+  text-align: center;
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+  }
+}
+
+.DM-checkout-payment {
+  margin-bottom: 20px;
+}
+
+ul.payment_methods {
+  list-style-type: none;
+  margin-bottom: 20px;
+  li {
+    margin-bottom: 10px;
+  }
+  .payment_box {
+    margin-top: 5px;
+    p, a {
+      color: #4F4F4F!important;
+    }
+  }
+  .about_paypal {
+    display: none!important;
+  }
+}
+
+.place-order {
+  .btnRed {
+    color: #f2f2f2!important;
+    float: none!important;
+  }
+}
+
+.col-200 {
+  flex: 0 0 300px;
+}
+
+@media (max-width: 1024px) {
+  .DM-row {
+    flex-wrap: wrap;
+    .col-200 {
+      margin-top: 30px;
+    }
+  }
+}
+
+.thank-you {
+  margin-top: 40px;
+  h5 {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  &__again {
+    text-align: center;
+  }
+  .order_details {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      flex: 0 0 100%;
+      margin-bottom: 20px;
+      border-right: none!important;
+    }
+  }
+  &__info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}

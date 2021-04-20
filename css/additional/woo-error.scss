@@ -1,0 +1,19 @@
+.woocommerce-notices-wrapper {
+  display: block!important;
+}
+.woocommerce-error {
+  margin: 2em 0!important;
+  border-radius: 4px;
+  border-top-color: #fe182a!important;
+  @media (max-width: 1024px) {
+    margin: 1em 0!important;
+  }
+  li {
+    color: #444444!important;
+    @media (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+

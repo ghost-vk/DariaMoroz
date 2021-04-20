@@ -1,0 +1,77 @@
+.bot__mob {
+  display: block;
+  width: 100%;
+  @media (min-width: 767px) {
+    display: none;
+  }
+  .bot__slider-wrapper {
+    width: 100%;
+  }
+}
+
+.card-slider {
+  padding-bottom: 50px;
+  .card-slider__img {
+    margin-bottom: 10px;
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  .card-slider__title {
+    margin-bottom: 5px;
+    span {
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 45px;
+      text-transform: uppercase;
+    }
+  }
+  p.card-subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 31px;
+    font-weight: 700;
+  }
+  a.btnWhite {}
+}
+
+.slick-card {
+  width: 95vw!important;
+  min-width: auto!important;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  li {
+    width: 20px!important;
+    position: relative;
+  }
+  button {
+    display: none!important;
+    visibility: hidden!important;
+    opacity: 0!important;
+  }
+  li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    color:#f2f2f2;
+    background-color: #f2f2f2;
+    transition: color .2s ease, background-color .2s ease;
+  }
+  .slick-active::before {
+    color:$red1;
+    background-color: $red1;
+  }
+  .slick-active::marker {
+    color:$red1;
+    background-color: $red1;
+  }
+}

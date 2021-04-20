@@ -1,0 +1,339 @@
+.courseBg {
+  margin: 0 auto;
+  max-width: 1920px;
+  background-repeat: no-repeat;
+}
+
+.courseBg_desktop {
+  background-position: bottom;
+  background-size: cover;
+}
+
+.courseBg_mobile {
+  background-position: top;
+  background-size: 300%;
+}
+
+.skill_course {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.btnWhite_mobile {
+  display: none;
+  margin-top: 20px;
+  max-width: 175px;
+}
+
+.marathonTop {
+  position: relative;
+}
+
+.marathonTop__DM {
+  cursor: default;
+  font-weight: 800;
+  font-size: calc(81px + 19 * ((100vw - 375px) / (1920 - 375)));
+  line-height: 84px;
+  letter-spacing: 0.06em;
+  text-shadow: 0px 5px 8px #000;
+  text-transform: uppercase;
+}
+
+.marathonTop__DM_desktop {
+  opacity: .25;
+  position: absolute;
+  left: -65px;
+  bottom: 300px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.marathonTop__DM_mobile {
+  display: none;
+  margin-top: 25px;
+}
+
+.marathonTop__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: default;
+  min-height: 400px;
+}
+
+.marathonTop__right {
+  max-width: 450px;
+}
+
+.marathonTop__right > p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.marathonTop__right > h2 {
+  text-shadow: 0px 5px 8px #000;
+}
+
+.marathonTop__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.marathonTop__date span {
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+
+.marathonTop__date > h2 {
+  font-size: calc(27px + 13 * ((100vw - 375px) / (1920 - 375)));
+  line-height: calc(30px + 18 * ((100vw - 375px) / (1920 - 375)));
+  text-shadow: 0px 5px 8px #000;
+}
+
+.marathonTop__time {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.marathonTop__time > h6 {
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 0px 5px 8px #000;
+}
+
+.marathonOne {
+  position: relative;
+  min-height: 250px;
+}
+
+.marathonOne > h1 {
+  white-space: nowrap;
+  letter-spacing: 0em;
+}
+
+.marathonOne__content {
+  max-width: 850px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.marathonOne__content > p {
+  position: relative;
+  font-weight: 500;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.marathonOne__content > p:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 9px;
+  background-color: #FF0000;
+  width: 20px;
+  height: 2px;
+}
+
+.marathonFreelesson {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.marathonFreelesson__video {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 41.8%;
+  max-width: 1018px;
+  z-index: 3;
+  border-radius: 2px;
+}
+
+.marathonFreelesson__video img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.marathonThree {
+  cursor: default;
+  position: relative;
+  margin-top: 100px;
+}
+
+.marathonThree h1 {
+  text-shadow: 0px 5px 8px #000;
+}
+
+.marathonThree__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+  max-width: 800px;
+}
+
+.marathonThree__pos {
+  width: 23%;
+  max-width: 160px;
+  margin-right: 10px;
+}
+
+.marathonThree__pos:last-child {
+  margin-right: 0;
+}
+
+.marathonThree__title {
+  font-weight: 800;
+  line-height: 45px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.marathonThree__title:before {
+  position: absolute;
+  content: '';
+  width: 40%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #FF0000;
+}
+
+.marathonThree__text {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.marathonDaysof {
+  position: relative;
+  margin-top: 100px;
+}
+
+.marathonDaysof > h1 {
+  line-height: calc(52px + 68 * ((100vw - 375px) / (1920 - 375)));
+}
+
+.marathonDaysof > p {
+  max-width: 600px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.marathonDaysof__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.marathonDaysof__date span {
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+
+.marathonDaysof__date > h2 {
+  font-size: calc(27px + 13 * ((100vw - 375px) / (1920 - 375)));
+  line-height: calc(30px + 18 * ((100vw - 375px) / (1920 - 375)));
+}
+
+.marathonDaysof__time {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.marathonDaysof__time > h6 {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.marathonDaysof__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 320px;
+}
+
+.btnCustom {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-size: 14px;
+  font-weight: 500;
+  background: #fff;
+  color: #000;
+  border-radius: 2px;
+  padding: 11px 30px;
+  -webkit-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
+}
+
+.btnCustom:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-device-width: 1921px) {
+  .marathonDaysof > h1 {
+    line-height: 120px;
+  }
+}
+
+@media (max-device-width: 912px) {
+  .marathonTop__content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .marathonTop__DM_desktop {
+    display: none;
+  }
+  .marathonTop__DM_mobile {
+    display: block;
+  }
+}
+
+@media (max-device-width: 768px) {
+  .btnWhite_big {
+    display: none;
+  }
+  .btnWhite_mobile {
+    display: block;
+  }
+  .marathonThree__pos {
+    width: 47%;
+    max-width: 500px;
+  }
+}
+
+@media (max-device-width: 575px) {
+  .marathonThree__pos {
+    width: 100%;
+  }
+}

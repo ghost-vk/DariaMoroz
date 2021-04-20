@@ -1,0 +1,156 @@
+@import "./additional/cart.css";
+.DM-total {
+  color: #000;
+  opacity: 0.5;
+}
+.DM-price {
+  font-weight: 400;
+}
+.DM-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.DM-row {
+  display: flex;
+  flex-direction: row;
+}
+.DM-row .jc-sb {
+  justify-content: space-between;
+}
+.DM-sizebox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+.DM-col {
+  display: flex;
+  flex-direction: column;
+}
+.DM-checkout {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+.DM-checkout-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.DM-checkout-page .container_full {
+  padding-top: 0px !important;
+}
+.DM-checkout-page .form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.DM-checkout-page .form-controller {
+  display: flex;
+  flex-direction: column;
+}
+.DM-checkout-page .form-controller input[type=text],
+.DM-checkout-page .form-controller input[type=email],
+.DM-checkout-page .form-controller input[type=tel],
+.DM-checkout-page .form-controller select,
+.DM-checkout-page .form-controller input[type=number] {
+  padding: 11px 30px;
+  margin: 8px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+}
+.DM-cart {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+.DM-cart-collaterals {
+  margin: 24px;
+}
+.DM-cart-collaterals .order-total th,
+.DM-cart-collaterals .cart-subtotal th {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  margin-right: 20px;
+}
+.DM-cart-collaterals .wc-proceed-to-checkout {
+  margin: 20px 0px;
+}
+.DM-cart-collaterals .checkout-button {
+  cursor: pointer;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  font-size: 14px;
+  font-weight: 500;
+  background: -o-linear-gradient(326.93deg, red 30.28%, #150002 109.15%);
+  background: linear-gradient(123.07deg, red 30.28%, #150002 109.15%);
+  border-radius: 2px;
+  padding: 11px 30px;
+  -webkit-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+.DM-cart-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.DM-cart-page .H3_bot {
+  bottom: -410px;
+}
+.DM-cart-page input[type=text],
+.DM-cart-page input[type=email],
+.DM-cart-page input[type=tel],
+.DM-cart-page select,
+.DM-cart-page input[type=number] {
+  padding: 11px 30px;
+  margin: 8px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+}
+.DM-cart-item {
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: 12px 8px;
+  width: 50vw;
+}
+.DM-cart-item__image img {
+  height: 80px;
+  width: 80px;
+}
+.DM-cart-remove {
+  display: flex;
+}
+.DM-cart-remove .remove {
+  text-decoration: none;
+  font-size: 36px;
+}
+
+.btnRed {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  font-size: 14px;
+  font-weight: 500;
+  background: -o-linear-gradient(326.93deg, red 30.28%, #150002 109.15%);
+  background: linear-gradient(123.07deg, red 30.28%, #150002 109.15%);
+  border-radius: 2px;
+  padding: 11px 30px;
+  -webkit-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+#payment_method_paypal img {
+  display: none;
+}
+
+/*# sourceMappingURL=cart.css.map */

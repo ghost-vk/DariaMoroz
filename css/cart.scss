@@ -1,0 +1,182 @@
+
+
+.DM {
+    &-total{
+        color: #000;
+        opacity: .5;
+    }
+    &-price{
+        font-weight: 400;
+    }
+    &-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &-row{
+        display: flex;
+        flex-direction: row;
+        .jc-sb{
+            justify-content: space-between;
+        }
+    }
+    &-sizebox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+    }
+    &-col{
+        display: flex;
+        flex-direction: column;
+    }
+    &-checkout{
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        &-page{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .container_full{
+                padding-top: 0px!important;
+            }
+            .form-wrapper{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .form-controller{
+                display: flex;
+                flex-direction: column;
+                input[type=text],
+            input[type=email],
+            input[type=tel],
+            select,
+            input[type=number]{
+                padding: 11px 30px;
+                margin: 8px;
+                border-radius: 8px;
+                font-family: "Montserrat", sans-serif;
+            }
+            }
+        }
+    }
+    &-cart {
+
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        &-collaterals{
+            margin: 24px;
+            .order-total,
+            .cart-subtotal{
+                th{
+                    font-family: "Montserrat", sans-serif;
+                    color: #fff;
+                    margin-right: 20px;
+                }
+            }
+            .wc-proceed-to-checkout{
+                margin: 20px 0px;
+            }
+            .checkout-button{
+                cursor: pointer;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none;
+    font-size: 14px;
+    font-weight: 500;
+    background: -o-linear-gradient(326.93deg,red 30.28%,#150002 109.15%);
+    background: linear-gradient(123.07deg,red 30.28%,#150002 109.15%);
+    border-radius: 2px;
+    padding: 11px 30px;
+    -webkit-transition: .1s linear;
+    -o-transition: .1s linear;
+    transition: .1s linear;
+            }
+    
+        }
+        &-page {
+            width: 100%;
+            //height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .H3_bot{
+                bottom: -410px;
+            }
+            input[type=text],
+            input[type=email],
+            input[type=tel],
+            select,
+            input[type=number]{
+                padding: 11px 30px;
+                margin: 8px;
+                border-radius: 8px;
+                font-family: "Montserrat", sans-serif;
+            }
+        }
+        &-item {
+            display: flex;
+            width: inherit;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            margin: 12px 8px;
+            width: 50vw;
+            &__image {
+                img {
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+            &__name {
+                //margin-right: 20px;
+            }
+            &__price {
+            }
+            &__subtotal {
+            }
+        }
+        &-actions {
+            &__update {
+            }
+            &__coupon {
+            }
+        }
+        &-remove {
+            display: flex;
+            .remove{
+                text-decoration: none;
+                font-size: 36px; 
+            }
+        }
+    }
+}
+
+
+.btnRed{
+    cursor: pointer;
+    font-family: "Montserrat",sans-serif;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none;
+    font-size: 14px;
+    font-weight: 500;
+    background: -o-linear-gradient(326.93deg,red 30.28%,#150002 109.15%);
+    background: linear-gradient(123.07deg,red 30.28%,#150002 109.15%);
+    border-radius: 2px;
+    padding: 11px 30px;
+    -webkit-transition: .1s linear;
+    -o-transition: .1s linear;
+    transition: .1s linear;
+}
+
+#payment_method_paypal{
+    img{
+        display: none;
+    }
+}
+
+@import "./additional/cart.css";

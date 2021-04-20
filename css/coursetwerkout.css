@@ -1,0 +1,313 @@
+.courseBg {
+  margin: 0 auto;
+  max-width: 1920px;
+  background-repeat: no-repeat;
+}
+
+.courseBg_desktop {
+  background-position: bottom;
+  background-size: cover;
+}
+
+.courseBg_mobile {
+  background-position: top;
+  background-size: 300%;
+}
+
+.bg__courseTwerk_cover {
+  background-size: cover;
+}
+
+.bg__courseTwerk_contain {
+  background-size: contain;
+}
+
+.skill_course {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.courseTwerkoutTop {
+  position: relative;
+}
+
+.courseTwerkoutTop__DM {
+  cursor: default;
+  font-weight: 800;
+  font-size: calc(81px + 19 * ((100vw - 375px) / (1920 - 375)));
+  line-height: 84px;
+  letter-spacing: 0.06em;
+  text-shadow: 0px 5px 8px #000;
+  text-transform: uppercase;
+}
+
+.courseTwerkoutTop__DM_desktop {
+  opacity: .25;
+  position: absolute;
+  left: -65px;
+  bottom: 300px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.courseTwerkoutTop__DM_mobile {
+  display: none;
+  margin-top: 25px;
+}
+
+.courseTwerkoutTop__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: default;
+  min-height: 400px;
+}
+
+.courseTwerkoutTop__right {
+  max-width: 550px;
+}
+
+.courseTwerkoutTop__right h2 {
+  font-size: calc(27px + 13 * ((100vw - 375px) / (1920 - 375)));
+  line-height: calc(30px + 18 * ((100vw - 375px) / (1920 - 375)));
+  text-shadow: 0px 5px 8px #000;
+}
+
+.courseTwerkoutTop__subTitle {
+  margin: 25px 0;
+}
+
+.courseTwerkoutTop__subTitle > h6 {
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 0px 5px 8px #000;
+}
+
+.courseTwerkoutTop__desc {
+  max-width: 270px;
+  margin-bottom: 60px;
+}
+
+.courseTwerkoutProgram > h1 {
+  text-shadow: 0 4px 8px #000;
+}
+
+.courseTwerkoutProgram__line {
+  cursor: default;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 750px;
+  margin-top: 50px;
+}
+
+.courseTwerkoutProgram__pos span {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 85px;
+  color: #BDBDBD;
+}
+
+.courseTwerkoutProgram__pos h6 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.module {
+  cursor: default;
+  position: relative;
+  margin-top: 70px;
+  min-height: 180px;
+}
+
+.module__pos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  margin-top: 20px;
+}
+
+.module__pos h6 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 20px;
+  min-width: 160px;
+}
+
+.module__pos p {
+  font-weight: 500;
+}
+
+.courseTwerkoutPack {
+  position: relative;
+  margin-top: 100px;
+}
+
+.courseTwerkoutPack__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.courseTwerkoutPack__pos {
+  cursor: default;
+  max-width: 290px;
+}
+
+.courseTwerkoutPack__pos > p {
+  margin: 15px 0;
+}
+
+.courseTwerkoutPack__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 260px;
+  margin-bottom: 30px;
+}
+
+.courseTwerkoutPack__price h4 {
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: 700;
+  color: #FE182A;
+  text-shadow: 0px 5px 8px #000;
+}
+
+.courseTwerkoutPack__price h6 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 43px;
+  text-shadow: 0px 5px 8px #000;
+}
+
+.courseTwerkoutPack__price.inactive h6 {
+  font-size: 28px;
+}
+
+.courseTwerkoutPack__price.active h6:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  width: 90px;
+  height: 2px;
+  background-color: #FF0000;
+}
+
+.courseTwerkoutPack__points {
+  margin-bottom: 50px;
+}
+.courseTwerkoutPack__points > ul{
+  list-style: none;
+}
+.courseTwerkoutPack__points > ul > li{
+  position: relative;
+  padding-left: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.courseTwerkoutPack__points > ul > li:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 9px;
+  width: 15px;
+  height: 2px;
+  background-color: #FF0000;
+}
+
+.courseTwerkoutPack__red {
+  color: #FE182A;
+}
+
+.courseTwerkoutBot {
+  position: relative;
+  margin-top: 100px;
+}
+
+.courseTwerkoutBot h6 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 40px 0;
+}
+
+@media (min-device-width: 1921px) {
+  .courseTwerkoutTop span {
+    font-size: 100px;
+  }
+  .courseTwerkoutTop__right > h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (max-device-width: 991px) {
+  .bg__courseTwerk_cover,
+  .bg__courseTwerk_contain {
+    background-size: 300%;
+  }
+  .courseTwerkoutPack__pos {
+    margin-top: 70px;
+  }
+  .courseTwerkoutPack__line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (max-device-width: 912px) {
+  .courseTwerkoutTop__content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .courseTwerkoutTop__DM_desktop {
+    display: none;
+  }
+  .courseTwerkoutTop__DM_mobile {
+    display: block;
+  }
+}
+
+@media (max-device-width: 768px) {
+  .courseTwerkoutProgram__line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .module__pos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}

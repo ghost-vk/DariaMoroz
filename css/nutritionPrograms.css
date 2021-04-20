@@ -1,0 +1,84 @@
+.nutprogContent {
+  position: relative;
+}
+
+.nutprogContent > p {
+  margin-top: 35px;
+  margin-bottom: 90px;
+  max-width: 530px;
+}
+
+.nutprogContent__varLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nutprogContent__var {
+  max-width: 290px;
+  margin-right: 20px;
+}
+
+.nutprogContent__var > p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.nutprogContent__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 260px;
+  margin-bottom: 30px;
+}
+
+.nutprogContent__price h4 {
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: 700;
+  color: #FE182A;
+  text-shadow: 0px 5px 8px #000;
+}
+
+.nutprogContent__price h6 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 43px;
+  text-shadow: 0px 5px 8px #000;
+}
+
+.nutprogContent__price.inactive h6 {
+  font-size: 28px;
+}
+
+.nutprogContent__price.active h6:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  width: 90px;
+  height: 2px;
+  background-color: #FF0000;
+}
+
+@media (max-device-width: 911px) {
+  .nutprogContent__varLine {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nutprogContent__var {
+    max-width: 500px;
+    margin-bottom: 50px;
+  }
+}

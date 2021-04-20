@@ -1,0 +1,243 @@
+#video-home-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#video-home-popup iframe {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stickPopup {
+  position: fixed;
+  cursor: default;
+  /*opacity: 0;*/
+  /*visibility: hidden;*/
+  opacity: 1;
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  -webkit-transition: .15s linear;
+  -o-transition: .15s linear;
+  transition: .15s linear;
+}
+
+.stickPopup_open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.stickPopup__area {
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+.stickPopup__bg {
+  position: relative;
+  z-index: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 5%;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+  width: 620px;
+  height: 400px;
+}
+
+.stickPopup__bg h6 {
+  font-weight: 600;
+  color: #333;
+}
+
+.stickPopup__DM {
+  cursor: default;
+  color: #333;
+  font-weight: 800;
+  font-size: calc(81px + 19 * ((100vw - 375px) / (1920 - 375)));
+  line-height: 84px;
+  text-transform: uppercase;
+  opacity: .05;
+  position: absolute;
+  white-space: nowrap;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-transform: scale3d(-1, -1, 1);
+  transform: scale3d(-1, -1, 1);
+  left: 0;
+  bottom: 0;
+}
+
+.stickPopup__content p {
+  color: #333;
+  max-width: 411px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.stickPopup__closeContainer {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  z-index: 110;
+}
+
+.stickPopup__closeBtn {
+  position: relative;
+  z-index: 10;
+  width: 46px;
+  height: 20px;
+}
+
+.stickPopup__closeBtn:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  background-color: #333;
+  -webkit-transform: rotateZ(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotateZ(-45deg);
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+  width: 25px;
+  height: 2px;
+  -webkit-transition: .15s linear;
+  -o-transition: .15s linear;
+  transition: .15s linear;
+}
+
+.stickPopup__closeBtn:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  background-color: #333;
+  -webkit-transform: rotateZ(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotateZ(45deg);
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+  width: 25px;
+  height: 2px;
+  -webkit-transition: .15s linear;
+  -o-transition: .15s linear;
+  transition: .15s linear;
+}
+
+.stickPopup__closeBtn:hover:after {
+  background-color: #FE182A;
+  -webkit-transform: rotateZ(0);
+  -ms-transform: rotate(0);
+  transform: rotateZ(0);
+  top: 50%;
+}
+
+.stickPopup__closeBtn:hover:before {
+  background-color: #FE182A;
+  -webkit-transform: rotateZ(0);
+  -ms-transform: rotate(0);
+  transform: rotateZ(0);
+  bottom: 50%;
+}
+
+.stickPopup__stickTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.stickPopup__stickTitle h2 {
+  color: #333;
+}
+
+.stickPopup__stickTitle span {
+  height: 2px;
+  width: 30px;
+  background-color: #333;
+  margin: 0 5px;
+}
+
+.stickPopup__stickTime {
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 45px;
+}
+
+.stickPopup__btn {
+  position: relative;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.stickPopup__btn a {
+  color: #333;
+  border-radius: 2px;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  font-weight: 600;
+  background: #e0e0e0;
+  padding: 11px 30px;
+  -webkit-transition: .15s linear;
+  -o-transition: .15s linear;
+  transition: .15s linear;
+}
+
+.stickPopup__btn a:hover {
+  color: #F5F5F5;
+  background: -o-linear-gradient(326.93deg, #FF0000 30.28%, #150002 109.15%);
+  background: linear-gradient(123.07deg, #FF0000 30.28%, #150002 109.15%);
+}
+
+@media (max-device-width: 575px) {
+  .stickPopup__bg {
+    width: 90%;
+  }
+  .stickPopup__content {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=popup.css.map */

@@ -1,0 +1,51 @@
+.bgImg {
+  background-image: url(../img/asphaltBG.jpg);
+  background-position: top;
+}
+
+.contentMer__mobile {
+  display: none;
+}
+
+.title {
+  position: relative;
+}
+
+.title h1 {
+  letter-spacing: 0.048em;
+  font-size: calc(33px + 80 * ((100vw - 375px) / (1920 - 375)));
+}
+
+.title h3 {
+  padding-bottom: 5px;
+}
+
+@media (min-device-width: 1921px) {
+  .title h1 {
+    font-size: 113px;
+  }
+}
+
+@media (max-device-width: 768px) {
+  .contentMer__desktop {
+    display: none;
+  }
+  .contentMer__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-device-width: 575px) {
+  .contentMer__mobile {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}

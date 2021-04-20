@@ -1,0 +1,29 @@
+#oneBlock__fixed {
+  width: calc(345px + 73 * ((100vw - 375px) / (1920 - 375)));
+  height: calc(164px + 36 * ((100vw - 375px) / (1920 - 375)));
+  max-width: 418px;
+  max-height: 200px;
+  .oneBlock__content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+#oneBlock__fixed.active_1 {
+  position: fixed;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(100, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(100, 50, 50, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(100, 50, 50, 0.75);
+  bottom: 50px;
+  left: 50px;
+}
+
+#oneBlock__fixed.active_2 {
+  position: fixed;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(100, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(100, 50, 50, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(100, 50, 50, 0.75);
+  top: 50px;
+  left: 50px;
+}
