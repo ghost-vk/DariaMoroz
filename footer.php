@@ -22,7 +22,11 @@
 				</div>
 				<div class="footer__bottom">
 					<div class="footer__left">
-						<span class="twoLine">Все права защищены 2020</span>
+						<span class="twoLine">&copy; Все права защищены 2020</span>
+                        <br />
+                        <span class="twoLine">ИП Мороз Дарья Дмитриевна</span>
+                        <br />
+                        <span class="twoLine">ИНН 772875777256</span>
 						<div class="footer__dev">
 							<span>Разработано:</span>
                             <a href="https://studiorro.ru" target="_blank">
