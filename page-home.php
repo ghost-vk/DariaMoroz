@@ -39,8 +39,8 @@ if ( !empty($_GET['code']) ) {
 						<div class="oneBlock__video" id="video-start-fixed-block">
                             <div id="oneBlock__fixed">
                                 <div class="oneBlock__content" id="first-video-block">
-                                    <video id="first-video" src="<?= the_field('first_video'); ?>"
-                                           playsinline autoplay muted loop></video>
+                                    <video id="first-video" src="<?php echo the_field('first_video'); ?>"
+                                           playsinline autoplay muted loop preload="metadata"></video>
                                     <picture>
                                         <source type="image/svg+xml" srcset="<?= get_template_directory_uri(); ?>/img/icons/stop.svg" />
                                         <img src="<?= get_template_directory_uri(); ?>/img/icons/stop.png" />
